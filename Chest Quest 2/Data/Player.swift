@@ -14,20 +14,18 @@ struct Player: Codable {
   var money: Int = 0
   
   static func load(to global: Global) {
-    guard let data = UserDefaults.standard.object(forKey: player_key) as? Data else {
+    var playerData: Player!
+    if let data = UserDefaults.standard.value(forKey: player_key) as? Data {
+      playerData = try? PropertyListDecoder().decode(Player.self, from: data)
+      global.player = playerData
+    } else {
       global.player = Player()
-      Debug.log("No player data was found.")
-      return
     }
-    let obj = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? Player
-    global.player = obj ?? Player()
     Debug.log("Player loaded from UserDefaults!")
-    print(obj)
   }
   
   static func save(with global: Global) {
-    let encodedData = try? NSKeyedArchiver.archivedData(withRootObject: global.player, requiringSecureCoding: false)
-    UserDefaults.standard.set(encodedData, forKey: player_key)
+    UserDefaults.standard.set(try? PropertyListEncoder().encode(global.player), forKey: player_key)
     Debug.log("Played saved to UserDefaults!")
   }
   
