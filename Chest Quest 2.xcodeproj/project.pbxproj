@@ -26,6 +26,7 @@
 		F539DA33266B22D600ED952F /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA32266B22D600ED952F /* AnimationSequence.swift */; };
 		F539DA36266B234000ED952F /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA35266B234000ED952F /* AnimationConfiguration.swift */; };
 		F539DA3B266B259B00ED952F /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = F539DA3A266B259B00ED952F /* SwiftUIX */; };
+		F539DA3F266C108700ED952F /* Text3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA3E266C108700ED952F /* Text3D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		F539DA2F266B202F00ED952F /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 		F539DA32266B22D600ED952F /* AnimationSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSequence.swift; sourceTree = "<group>"; };
 		F539DA35266B234000ED952F /* AnimationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
+		F539DA3E266C108700ED952F /* Text3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text3D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				F539DA02266B0D4A00ED952F /* App */,
 				F539DA17266B0F0200ED952F /* Data */,
 				F539DA0D266B0DFF00ED952F /* Views */,
+				F539DA3D266C106000ED952F /* Components */,
 				F539DA08266B0DA700ED952F /* Utility */,
 				F539DA27266B1D0E00ED952F /* Extensions */,
 				F539DA12266B0EB000ED952F /* Misc */,
@@ -169,6 +172,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F539DA3D266C106000ED952F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F539DA3E266C108700ED952F /* Text3D.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -248,6 +259,7 @@
 				F539DA30266B202F00ED952F /* Dispatcher.swift in Sources */,
 				F506A16F266B0B8A000627E0 /* AppDelegate.swift in Sources */,
 				F539DA21266B182700ED952F /* Debug.swift in Sources */,
+				F539DA3F266C108700ED952F /* Text3D.swift in Sources */,
 				F539DA0A266B0DB200ED952F /* Haptic.swift in Sources */,
 				F539DA0F266B0E4C00ED952F /* Global.swift in Sources */,
 				F539DA33266B22D600ED952F /* AnimationSequence.swift in Sources */,
