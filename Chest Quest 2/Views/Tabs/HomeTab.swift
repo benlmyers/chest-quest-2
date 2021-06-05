@@ -25,6 +25,10 @@ struct HomeTab: View {
       Button(action: moneyTap) {
         Text("Tap!")
       }
+      
+      Button(action: {Player.load(to: g)}) {
+        Text("Load")
+      }
     }
   }
   

@@ -19,6 +19,7 @@
 		F539DA14266B0EB700ED952F /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA13266B0EB700ED952F /* Tab.swift */; };
 		F539DA19266B0F1300ED952F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA18266B0F1300ED952F /* Player.swift */; };
 		F539DA1D266B109700ED952F /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA1C266B109700ED952F /* HomeTab.swift */; };
+		F539DA21266B182700ED952F /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA20266B182700ED952F /* Debug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F539DA13266B0EB700ED952F /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		F539DA18266B0F1300ED952F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F539DA1C266B109700ED952F /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		F539DA20266B182700ED952F /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				F539DA13266B0EB700ED952F /* Tab.swift */,
+				F539DA20266B182700ED952F /* Debug.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F506A16F266B0B8A000627E0 /* AppDelegate.swift in Sources */,
+				F539DA21266B182700ED952F /* Debug.swift in Sources */,
 				F539DA0A266B0DB200ED952F /* Haptic.swift in Sources */,
 				F539DA0F266B0E4C00ED952F /* Global.swift in Sources */,
 				F539DA04266B0D5300ED952F /* Theme.swift in Sources */,

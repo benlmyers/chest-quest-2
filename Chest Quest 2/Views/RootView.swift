@@ -17,6 +17,16 @@ struct RootView: View {
       HomeTab().tabItem { Text("Home") }.tag(1)
       Text("Tab2").tabItem { Text("Tab 2") }.tag(2)
     }
+    .onAppear(perform: handleAppear)
+    .onDisappear(perform: handleDisappear)
+  }
+  
+  private func handleAppear() {
+    Player.load(to: g)
+  }
+  
+  private func handleDisappear() {
+    Player.save(with: g)
   }
 }
 
