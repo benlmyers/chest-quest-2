@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		F539DA30266B202F00ED952F /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA2F266B202F00ED952F /* Dispatcher.swift */; };
 		F539DA33266B22D600ED952F /* AnimationSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA32266B22D600ED952F /* AnimationSequence.swift */; };
 		F539DA36266B234000ED952F /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA35266B234000ED952F /* AnimationConfiguration.swift */; };
+		F539DA3B266B259B00ED952F /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = F539DA3A266B259B00ED952F /* SwiftUIX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F539DA3B266B259B00ED952F /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +185,9 @@
 			dependencies = (
 			);
 			name = "Chest Quest 2";
+			packageProductDependencies = (
+				F539DA3A266B259B00ED952F /* SwiftUIX */,
+			);
 			productName = "Chest Quest 2";
 			productReference = F506A16B266B0B8A000627E0 /* Chest Quest 2.app */;
 			productType = "com.apple.product-type.application";
@@ -210,6 +215,9 @@
 				Base,
 			);
 			mainGroup = F506A162266B0B8A000627E0;
+			packageReferences = (
+				F539DA39266B259B00ED952F /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = F506A16C266B0B8A000627E0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -449,6 +457,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F539DA39266B259B00ED952F /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F539DA3A266B259B00ED952F /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F539DA39266B259B00ED952F /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F506A163266B0B8A000627E0 /* Project object */;
 }

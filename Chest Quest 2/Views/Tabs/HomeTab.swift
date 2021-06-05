@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftUIX
 
 struct HomeTab: View {
   
@@ -35,13 +36,29 @@ struct HomeTab: View {
   
   var body: some View {
     
-    VStack {
+    ZStack {
       
-      moneyCounter
-      
-      Button(action: moneyTap) {
-        Text("Tap!")
+      VStack {
+        moneyCounter
       }
+      
+      VStack {
+        
+        Spacer()
+        
+        VStack(alignment: .center) {
+          Text("Tap for money!")
+            .fontWeight(.bold)
+        }
+        .maxWidth(.infinity)
+        .padding(24.0)
+        .foregroundColor(.white)
+        .background(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
+        .cornerRadius(12.0)
+        .rotation3DEffect(.degrees(tiltMoneyCounter / 10.0), axis: (10.0, 10.0, 00.0))
+        .onTapGesture(perform: moneyTap)
+      }
+      .padding()
     }
   }
   
