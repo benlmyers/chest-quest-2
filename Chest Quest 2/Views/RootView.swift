@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RootView.swift
 //  Chest Quest 2
 //
 //  Created by Ben Myers on 6/4/21.
