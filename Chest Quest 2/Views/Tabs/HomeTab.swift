@@ -59,6 +59,7 @@ struct HomeTab: View {
         .foregroundColor(.white)
         .background(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
         .cornerRadius(12.0)
+        .opacity(g.p.money >= g.p.maxMoney ? 0.5 : 1.0)
         .rotation3DEffect(.degrees(tiltMoneyCounter / 10.0), axis: (10.0, 10.0, 00.0))
         .onTapGesture(perform: moneyTap)
       }
