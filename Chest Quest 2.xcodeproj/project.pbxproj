@@ -62,9 +62,7 @@
 			children = (
 				F539DA02266B0D4A00ED952F /* App */,
 				F539DA08266B0DA700ED952F /* Utility */,
-				F506A16E266B0B8A000627E0 /* AppDelegate.swift */,
-				F506A170266B0B8A000627E0 /* SceneDelegate.swift */,
-				F506A172266B0B8A000627E0 /* RootView.swift */,
+				F539DA0D266B0DFF00ED952F /* Views */,
 				F506A174266B0B8D000627E0 /* Assets.xcassets */,
 				F506A179266B0B8D000627E0 /* LaunchScreen.storyboard */,
 				F506A17C266B0B8D000627E0 /* Info.plist */,
@@ -84,6 +82,8 @@
 		F539DA02266B0D4A00ED952F /* App */ = {
 			isa = PBXGroup;
 			children = (
+				F506A170266B0B8A000627E0 /* SceneDelegate.swift */,
+				F506A16E266B0B8A000627E0 /* AppDelegate.swift */,
 				F539DA03266B0D5300ED952F /* Theme.swift */,
 			);
 			path = App;
@@ -95,6 +95,14 @@
 				F539DA09266B0DB200ED952F /* Haptic.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		F539DA0D266B0DFF00ED952F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F506A172266B0B8A000627E0 /* RootView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
