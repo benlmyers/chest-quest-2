@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F506A16F266B0B8A000627E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506A16E266B0B8A000627E0 /* AppDelegate.swift */; };
 		F506A171266B0B8A000627E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506A170266B0B8A000627E0 /* SceneDelegate.swift */; };
-		F506A173266B0B8A000627E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506A172266B0B8A000627E0 /* ContentView.swift */; };
+		F506A173266B0B8A000627E0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506A172266B0B8A000627E0 /* RootView.swift */; };
 		F506A175266B0B8D000627E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F506A174266B0B8D000627E0 /* Assets.xcassets */; };
 		F506A178266B0B8D000627E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F506A177266B0B8D000627E0 /* Preview Assets.xcassets */; };
 		F506A17B266B0B8D000627E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F506A179266B0B8D000627E0 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		F506A16B266B0B8A000627E0 /* Chest Quest 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chest Quest 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506A16E266B0B8A000627E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F506A170266B0B8A000627E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F506A172266B0B8A000627E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F506A172266B0B8A000627E0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		F506A174266B0B8D000627E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F506A177266B0B8D000627E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F506A17A266B0B8D000627E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 				F539DA02266B0D4A00ED952F /* App */,
 				F506A16E266B0B8A000627E0 /* AppDelegate.swift */,
 				F506A170266B0B8A000627E0 /* SceneDelegate.swift */,
-				F506A172266B0B8A000627E0 /* ContentView.swift */,
+				F506A172266B0B8A000627E0 /* RootView.swift */,
 				F506A174266B0B8D000627E0 /* Assets.xcassets */,
 				F506A179266B0B8D000627E0 /* LaunchScreen.storyboard */,
 				F506A17C266B0B8D000627E0 /* Info.plist */,
@@ -159,7 +159,7 @@
 				F506A16F266B0B8A000627E0 /* AppDelegate.swift in Sources */,
 				F539DA04266B0D5300ED952F /* Theme.swift in Sources */,
 				F506A171266B0B8A000627E0 /* SceneDelegate.swift in Sources */,
-				F506A173266B0B8A000627E0 /* ContentView.swift in Sources */,
+				F506A173266B0B8A000627E0 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
