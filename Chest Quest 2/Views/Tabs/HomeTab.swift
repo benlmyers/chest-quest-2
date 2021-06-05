@@ -31,6 +31,10 @@ struct HomeTab: View {
           .foregroundColor(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
       }
       .rotation3DEffect(.degrees(tiltMoneyCounter), axis: (10.0, 10.0, 00.0))
+      Text("Max $\(g.p.maxMoney)")
+        .italic()
+        .font(.caption)
+        .foregroundColor(g.p.money >= g.p.maxMoney ? Color.red : Theme.c)
     }
   }
   
@@ -63,9 +67,11 @@ struct HomeTab: View {
   }
   
   private func moneyTap() {
-    g.p.money += 1
-    Haptic.play(.light)
-    animateMoneyCounter()
+    if g.p.money < g.p.maxMoney {
+      g.p.money += 1
+      Haptic.play(.light)
+      animateMoneyCounter()
+    }
   }
   
   private func animateMoneyCounter() {
