@@ -15,6 +15,10 @@
 		F506A17B266B0B8D000627E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F506A179266B0B8D000627E0 /* LaunchScreen.storyboard */; };
 		F539DA04266B0D5300ED952F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA03266B0D5300ED952F /* Theme.swift */; };
 		F539DA0A266B0DB200ED952F /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA09266B0DB200ED952F /* Haptic.swift */; };
+		F539DA0F266B0E4C00ED952F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA0E266B0E4C00ED952F /* Global.swift */; };
+		F539DA14266B0EB700ED952F /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA13266B0EB700ED952F /* Tab.swift */; };
+		F539DA19266B0F1300ED952F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA18266B0F1300ED952F /* Player.swift */; };
+		F539DA1D266B109700ED952F /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA1C266B109700ED952F /* HomeTab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		F506A17C266B0B8D000627E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F539DA03266B0D5300ED952F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		F539DA09266B0DB200ED952F /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
+		F539DA0E266B0E4C00ED952F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		F539DA13266B0EB700ED952F /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		F539DA18266B0F1300ED952F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F539DA1C266B109700ED952F /* HomeTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +69,10 @@
 			isa = PBXGroup;
 			children = (
 				F539DA02266B0D4A00ED952F /* App */,
-				F539DA08266B0DA700ED952F /* Utility */,
+				F539DA17266B0F0200ED952F /* Data */,
 				F539DA0D266B0DFF00ED952F /* Views */,
+				F539DA08266B0DA700ED952F /* Utility */,
+				F539DA12266B0EB000ED952F /* Misc */,
 				F506A174266B0B8D000627E0 /* Assets.xcassets */,
 				F506A179266B0B8D000627E0 /* LaunchScreen.storyboard */,
 				F506A17C266B0B8D000627E0 /* Info.plist */,
@@ -85,6 +95,7 @@
 				F506A170266B0B8A000627E0 /* SceneDelegate.swift */,
 				F506A16E266B0B8A000627E0 /* AppDelegate.swift */,
 				F539DA03266B0D5300ED952F /* Theme.swift */,
+				F539DA0E266B0E4C00ED952F /* Global.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -101,8 +112,33 @@
 			isa = PBXGroup;
 			children = (
 				F506A172266B0B8A000627E0 /* RootView.swift */,
+				F539DA1B266B108B00ED952F /* Tabs */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F539DA12266B0EB000ED952F /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				F539DA13266B0EB700ED952F /* Tab.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		F539DA17266B0F0200ED952F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F539DA18266B0F1300ED952F /* Player.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F539DA1B266B108B00ED952F /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				F539DA1C266B109700ED952F /* HomeTab.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +213,13 @@
 			files = (
 				F506A16F266B0B8A000627E0 /* AppDelegate.swift in Sources */,
 				F539DA0A266B0DB200ED952F /* Haptic.swift in Sources */,
+				F539DA0F266B0E4C00ED952F /* Global.swift in Sources */,
 				F539DA04266B0D5300ED952F /* Theme.swift in Sources */,
+				F539DA19266B0F1300ED952F /* Player.swift in Sources */,
 				F506A171266B0B8A000627E0 /* SceneDelegate.swift in Sources */,
+				F539DA1D266B109700ED952F /* HomeTab.swift in Sources */,
 				F506A173266B0B8A000627E0 /* RootView.swift in Sources */,
+				F539DA14266B0EB700ED952F /* Tab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

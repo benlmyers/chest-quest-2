@@ -9,10 +9,14 @@ import SwiftUI
 
 struct RootView: View {
   
+  @EnvironmentObject var g: Global
+  
   var body: some View {
     
-    Text("Hello, world!")
-      .padding()
+    TabView(selection: $g.tab) {
+      HomeTab().tabItem { Text("Home") }.tag(1)
+      Text("Tab2").tabItem { Text("Tab 2") }.tag(2)
+    }
   }
 }
 
