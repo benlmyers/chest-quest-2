@@ -27,6 +27,7 @@
 		F539DA36266B234000ED952F /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA35266B234000ED952F /* AnimationConfiguration.swift */; };
 		F539DA3B266B259B00ED952F /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = F539DA3A266B259B00ED952F /* SwiftUIX */; };
 		F539DA3F266C108700ED952F /* Text3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA3E266C108700ED952F /* Text3D.swift */; };
+		F57477B3266C446C005BF878 /* Unlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57477B2266C446C005BF878 /* Unlocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		F539DA32266B22D600ED952F /* AnimationSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSequence.swift; sourceTree = "<group>"; };
 		F539DA35266B234000ED952F /* AnimationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
 		F539DA3E266C108700ED952F /* Text3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text3D.swift; sourceTree = "<group>"; };
+		F57477B2266C446C005BF878 /* Unlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unlocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F539DA18266B0F1300ED952F /* Player.swift */,
+				F57477B2266C446C005BF878 /* Unlocks.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				F539DA29266B1D1F00ED952F /* View.swift in Sources */,
 				F539DA2D266B1FD000ED952F /* Animation.swift in Sources */,
 				F539DA14266B0EB700ED952F /* Tab.swift in Sources */,
+				F57477B3266C446C005BF878 /* Unlocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

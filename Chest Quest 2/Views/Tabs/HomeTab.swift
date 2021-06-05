@@ -14,13 +14,19 @@ struct HomeTab: View {
   
   @State var tiltMoneyCounter: Double = 0.0
   
+  init() {
+    UIView.appearance().isMultipleTouchEnabled = true
+    UIView.appearance().isExclusiveTouch = true
+  }
+  
   var moneyCounter: some View {
     VStack {
-      Text("Balance")
+      Text("Money")
         .font(.caption)
         .b()
       Text3D(text: "$\(g.p.money)", color1: Color(#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)), color2: Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-      .rotation3DEffect(.degrees(tiltMoneyCounter), axis: (10.0, 10.0, 00.0))
+        .width(200.0)
+        .rotation3DEffect(.degrees(tiltMoneyCounter), axis: (10.0, 10.0, 00.0))
       Text("Max $\(g.p.maxMoney)")
         .italic()
         .font(.caption)
@@ -28,13 +34,39 @@ struct HomeTab: View {
     }
   }
   
+  var shardCounter: some View {
+    VStack {
+      Text("Shards")
+        .font(.caption)
+        .b()
+      Text3D(text: "\(g.p.shards)", color1: Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)), color2: Color(#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)))
+        .width(200.0)
+      Text("Max \(g.p.maxShards)")
+        .italic()
+        .font(.caption)
+        .foregroundColor(g.p.shards >= g.p.maxShards ? Color.red : Theme.c)
+    }
+  }
+  
   var body: some View {
     
     ZStack {
       
-      VStack {
-        moneyCounter
+      ScrollView {
+      
+        VStack {
+          
+          HStack {
+            
+            moneyCounter
+            
+            if g.p.u.shards { shardCounter }
+          }
+          
+          Button(action: {g.p.money = 0}) { Text("reset") }
+        }
       }
+      .padding()
       
       VStack {
         

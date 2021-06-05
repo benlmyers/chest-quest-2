@@ -11,8 +11,17 @@ struct Player: Codable {
   
   static var player_key: String = "player"
   
+  var u: Unlocks {
+    set { unlocks = newValue }
+    get { unlocks }
+  }
+  
   var money: Int = 0
   var maxMoney: Int = 100
+  var shards: Int = 0
+  var maxShards: Int = 10
+  
+  var unlocks: Unlocks = Unlocks()
   
   static func load(to global: Global) {
     var playerData: Player!
@@ -31,6 +40,7 @@ struct Player: Codable {
   }
   
   enum CodingKeys: String, CodingKey {
-    case money, maxMoney
+    case money, maxMoney, shards, maxShards
+    case unlocks
   }
 }
