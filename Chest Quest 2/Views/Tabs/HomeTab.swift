@@ -72,6 +72,12 @@ struct HomeTab: View {
         
         Spacer()
         
+        HStack {
+          BuyChestButton()
+          BuyChestButton()
+          BuyChestButton()
+        }
+        
         VStack(alignment: .center) {
           Text("Tap for money!")
             .fontWeight(.bold)
@@ -79,7 +85,7 @@ struct HomeTab: View {
         .maxWidth(.infinity)
         .padding(24.0)
         .foregroundColor(.white)
-        .background(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
+        .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
         .cornerRadius(12.0)
         .opacity(g.p.money >= g.p.maxMoney ? 0.5 : 1.0)
         .rotation3DEffect(.degrees(tiltMoneyCounter / 10.0), axis: (10.0, 10.0, 00.0))

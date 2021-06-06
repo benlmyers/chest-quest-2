@@ -28,6 +28,7 @@
 		F539DA3B266B259B00ED952F /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = F539DA3A266B259B00ED952F /* SwiftUIX */; };
 		F539DA3F266C108700ED952F /* Text3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA3E266C108700ED952F /* Text3D.swift */; };
 		F57477B3266C446C005BF878 /* Unlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57477B2266C446C005BF878 /* Unlocks.swift */; };
+		F57477B7266C4600005BF878 /* BuyChestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57477B6266C4600005BF878 /* BuyChestButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		F539DA35266B234000ED952F /* AnimationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
 		F539DA3E266C108700ED952F /* Text3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text3D.swift; sourceTree = "<group>"; };
 		F57477B2266C446C005BF878 /* Unlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unlocks.swift; sourceTree = "<group>"; };
+		F57477B6266C4600005BF878 /* BuyChestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyChestButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				F539DA1C266B109700ED952F /* HomeTab.swift */,
+				F57477B5266C45F4005BF878 /* Home */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -181,6 +184,14 @@
 				F539DA3E266C108700ED952F /* Text3D.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F57477B5266C45F4005BF878 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F57477B6266C4600005BF878 /* BuyChestButton.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				F539DA0F266B0E4C00ED952F /* Global.swift in Sources */,
 				F539DA33266B22D600ED952F /* AnimationSequence.swift in Sources */,
 				F539DA04266B0D5300ED952F /* Theme.swift in Sources */,
+				F57477B7266C4600005BF878 /* BuyChestButton.swift in Sources */,
 				F539DA19266B0F1300ED952F /* Player.swift in Sources */,
 				F506A171266B0B8A000627E0 /* SceneDelegate.swift in Sources */,
 				F539DA1D266B109700ED952F /* HomeTab.swift in Sources */,
