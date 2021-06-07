@@ -241,7 +241,7 @@ struct HomeTab: View {
           .foregroundColor(Theme.c)
       }
     }
-    .frame(width: 130.0)
+    .frame(width: 120.0)
   }
   
   var body: some View {
@@ -271,8 +271,8 @@ struct HomeTab: View {
           
           gemsView
         }
+        .padding()
       }
-      .padding()
       
       VStack {
         
