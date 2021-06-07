@@ -18,6 +18,4 @@ class Global: ObservableObject {
   @Published var tab: Tab = .home
   
   @Published var player: Player = Player()
-  
-  @Published var money: Int = 0
 }

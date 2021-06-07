@@ -23,6 +23,12 @@ struct Player: Codable {
   
   var unlocks: Unlocks = Unlocks()
   
+  var gems: [Gem: Int] = [
+    .red: 0, .green: 0, .blue: 0,
+    .yellow: 0, .cyan: 0, .magenta: 0,
+    .orange: 0, .lime: 0, .spring: 0, .azure: 0, .violet: 0, .rose: 0
+  ]
+  
   static func load(to global: Global) {
     var playerData: Player!
     if let data = UserDefaults.standard.value(forKey: player_key) as? Data {
@@ -42,5 +48,6 @@ struct Player: Codable {
   enum CodingKeys: String, CodingKey {
     case money, maxMoney, shards, maxShards
     case unlocks
+    case gems
   }
 }

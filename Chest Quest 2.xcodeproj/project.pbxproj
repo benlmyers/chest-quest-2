@@ -28,7 +28,8 @@
 		F539DA3B266B259B00ED952F /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = F539DA3A266B259B00ED952F /* SwiftUIX */; };
 		F539DA3F266C108700ED952F /* Text3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = F539DA3E266C108700ED952F /* Text3D.swift */; };
 		F57477B3266C446C005BF878 /* Unlocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57477B2266C446C005BF878 /* Unlocks.swift */; };
-		F57477B7266C4600005BF878 /* BuyChestButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57477B6266C4600005BF878 /* BuyChestButton.swift */; };
+		F57477B7266C4600005BF878 /* BuyChestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57477B6266C4600005BF878 /* BuyChestView.swift */; };
+		F5AC2D30266DD92300547A36 /* Gem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC2D2F266DD92300547A36 /* Gem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +55,8 @@
 		F539DA35266B234000ED952F /* AnimationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
 		F539DA3E266C108700ED952F /* Text3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text3D.swift; sourceTree = "<group>"; };
 		F57477B2266C446C005BF878 /* Unlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unlocks.swift; sourceTree = "<group>"; };
-		F57477B6266C4600005BF878 /* BuyChestButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyChestButton.swift; sourceTree = "<group>"; };
+		F57477B6266C4600005BF878 /* BuyChestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyChestView.swift; sourceTree = "<group>"; };
+		F5AC2D2F266DD92300547A36 /* Gem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				F539DA3D266C106000ED952F /* Components */,
 				F539DA08266B0DA700ED952F /* Utility */,
 				F539DA27266B1D0E00ED952F /* Extensions */,
+				F5AC2D32266DD9AA00547A36 /* Enums */,
 				F539DA12266B0EB000ED952F /* Misc */,
 				F506A174266B0B8D000627E0 /* Assets.xcassets */,
 				F506A179266B0B8D000627E0 /* LaunchScreen.storyboard */,
@@ -125,6 +128,7 @@
 		F539DA08266B0DA700ED952F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				F539DA20266B182700ED952F /* Debug.swift */,
 				F539DA09266B0DB200ED952F /* Haptic.swift */,
 				F539DA2F266B202F00ED952F /* Dispatcher.swift */,
 				F539DA32266B22D600ED952F /* AnimationSequence.swift */,
@@ -145,8 +149,6 @@
 		F539DA12266B0EB000ED952F /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				F539DA13266B0EB700ED952F /* Tab.swift */,
-				F539DA20266B182700ED952F /* Debug.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -189,9 +191,18 @@
 		F57477B5266C45F4005BF878 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F57477B6266C4600005BF878 /* BuyChestButton.swift */,
+				F57477B6266C4600005BF878 /* BuyChestView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		F5AC2D32266DD9AA00547A36 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				F539DA13266B0EB700ED952F /* Tab.swift */,
+				F5AC2D2F266DD92300547A36 /* Gem.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,11 +289,12 @@
 				F539DA0F266B0E4C00ED952F /* Global.swift in Sources */,
 				F539DA33266B22D600ED952F /* AnimationSequence.swift in Sources */,
 				F539DA04266B0D5300ED952F /* Theme.swift in Sources */,
-				F57477B7266C4600005BF878 /* BuyChestButton.swift in Sources */,
+				F57477B7266C4600005BF878 /* BuyChestView.swift in Sources */,
 				F539DA19266B0F1300ED952F /* Player.swift in Sources */,
 				F506A171266B0B8A000627E0 /* SceneDelegate.swift in Sources */,
 				F539DA1D266B109700ED952F /* HomeTab.swift in Sources */,
 				F539DA36266B234000ED952F /* AnimationConfiguration.swift in Sources */,
+				F5AC2D30266DD92300547A36 /* Gem.swift in Sources */,
 				F506A173266B0B8A000627E0 /* RootView.swift in Sources */,
 				F539DA29266B1D1F00ED952F /* View.swift in Sources */,
 				F539DA2D266B1FD000ED952F /* Animation.swift in Sources */,
