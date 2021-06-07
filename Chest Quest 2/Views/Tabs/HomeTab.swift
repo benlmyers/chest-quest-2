@@ -192,43 +192,45 @@ struct HomeTab: View {
         .fontWeight(.light)
         .font(.caption)
         .b()
-      HStack {
-        gemDisplay(.red)
-        Spacer()
-        gemDisplay(.green)
-        Spacer()
-        gemDisplay(.blue)
+      VStack(spacing: 4.0) {
+        HStack {
+          gemDisplay(.red)
+          //Spacer()
+          gemDisplay(.green)
+          //Spacer()
+          gemDisplay(.blue)
+        }
+        HStack {
+          gemDisplay(.yellow)
+          //Spacer()
+          gemDisplay(.cyan)
+          //Spacer()
+          gemDisplay(.pink)
+        }
+        HStack {
+          gemDisplay(.orange)
+          Spacer()
+          gemDisplay(.lime)
+          Spacer()
+          gemDisplay(.spring)
+        }
+        HStack {
+          gemDisplay(.azure)
+          Spacer()
+          gemDisplay(.violet)
+          Spacer()
+          gemDisplay(.rose)
+        }
       }
-      HStack {
-        gemDisplay(.yellow)
-        Spacer()
-        gemDisplay(.cyan)
-        Spacer()
-        gemDisplay(.magenta)
-      }
-      HStack {
-        gemDisplay(.orange)
-        Spacer()
-        gemDisplay(.lime)
-        Spacer()
-        gemDisplay(.spring)
-      }
-      HStack {
-        gemDisplay(.azure)
-        Spacer()
-        gemDisplay(.violet)
-        Spacer()
-        gemDisplay(.rose)
-      }
+      .padding()
     }
-    .padding()
   }
   
-  func gemDisplay(_ gem: Gem) -> some View{
-    HStack {
+  func gemDisplay(_ gem: Gem) -> some View {
+    HStack(spacing: 0.0) {
       Image("chest")
         .resizable()
-        .frame(width: 50.0, height: 50.0)
+        .frame(width: 40.0, height: 40.0)
       VStack(alignment: .leading) {
         Text("\(g.p.gems[gem] ?? -1)")
           .fontWeight(.bold)
@@ -241,7 +243,6 @@ struct HomeTab: View {
           .foregroundColor(Theme.c)
       }
     }
-    .frame(width: 120.0)
   }
   
   var body: some View {
@@ -270,6 +271,9 @@ struct HomeTab: View {
           Divider()
           
           gemsView
+          
+          Spacer()
+            .height(50.0)
         }
         .padding()
       }

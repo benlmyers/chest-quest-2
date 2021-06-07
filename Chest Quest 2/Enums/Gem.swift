@@ -9,13 +9,13 @@ import Foundation
 
 enum Gem: String, Codable {
   case red = "Red", green = "Green", blue = "Blue"
-  case yellow = "Yellow", cyan = "Cyan", magenta = "Magenta"
+  case yellow = "Yellow", cyan = "Cyan", pink = "Pink"
   case orange = "Orange", lime = "Lime", spring = "Spring", azure = "Azure", violet = "Violet", rose = "Rose"
   
   var tier: Int {
     switch self {
       case .red, .green, .blue: return 1
-      case .yellow, .cyan, .magenta: return 2
+      case .yellow, .cyan, .pink: return 2
       case .orange, .lime, .spring, .azure, .violet, .rose: return 3
     }
   }
@@ -29,12 +29,12 @@ enum Gem: String, Codable {
  (Ruby, Jade, Sapphire)
  
  Tier 2:
- Yellow, Cyan, Magenta
+ Yellow, Cyan, Pink
  (Topaz, Aqua, Amethyst)
  
  Red + Green -> Yellow
  Green + Blue -> Cyan
- Red + Blue -> Magenta
+ Red + Blue -> Pink
  
  Tier 3:
  Orange, Lime, Spring, Azure, Violet, Rose

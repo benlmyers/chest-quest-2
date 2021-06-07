@@ -25,7 +25,7 @@ struct Player: Codable {
   
   var gems: [Gem: Int] = [
     .red: 0, .green: 0, .blue: 0,
-    .yellow: 0, .cyan: 0, .magenta: 0,
+    .yellow: 0, .cyan: 0, .pink: 0,
     .orange: 0, .lime: 0, .spring: 0, .azure: 0, .violet: 0, .rose: 0
   ]
   
